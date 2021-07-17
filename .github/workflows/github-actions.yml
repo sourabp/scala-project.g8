@@ -1,0 +1,13 @@
+name: Scala template test
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: "Test execution"
+        uses: ./.github/actions/
+        id: sample-project-creation
+        with:
+          template-defaults: "--name='TEST'"
