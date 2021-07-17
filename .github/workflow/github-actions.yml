@@ -1,0 +1,8 @@
+name: Scala template test
+on: [push]
+jobs:
+  Create-Sample-project:
+    runs-on: avastsoftware/g8
+    steps:
+      - run: /root/bin/g8 --force file://.
+
