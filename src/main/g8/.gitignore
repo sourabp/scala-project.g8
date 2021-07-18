@@ -1,0 +1,26 @@
+*.class
+*.log
+
+# SBT Ignore Rules
+logs/
+project/project
+target/
+tmp
+dist
+/*.iml
+/out
+/.idea_modules
+/.classpath
+/.project
+/RUNNING_PID
+/.settings
+
+# IntelliJ IDE Specific Ignore Rules
+.idea/
+project/target/
+
+# Mac OSX Specific
+*.DS_Store
+
+# Vscode Specific
+.vscode/

@@ -1,0 +1,11 @@
+name: "G8 test"
+description: "Tests G8 template by triggering project template initiation from g8 cli"
+inputs:
+  template-defaults:
+    description: "Template Defaults"
+    required: true
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.template-defaults }}
